@@ -285,16 +285,23 @@ Bottom Sheet - Customize
 * [https://github.com/nysamnang/react-native-raw-bottom-sheet](https://github.com/nysamnang/react-native-raw-bottom-sheet) - 846
 * [https://github.com/StefanoMartella/react-native-simple-bottom-sheet](https://github.com/StefanoMartella/react-native-simple-bottom-sheet) - 27
 
+### Timelogs
+
 #### 23/8/2021
 
 * [ ] Setup 2FA Google Authenticator for withdraw
 * [ ] Exchange API implementation
 * [ ] BMX screens mockup -&gt; T6
 * [ ] BMX APis
+  * [ ] Info
+  * [ ] Projects
+  * [ ] Records
+  * [ ] GET/bmx/unstake
+  * [ ] POST /bmx/purchase
 
-24/8/2021
+#### 24/8/2021
 
-Issues: `Apisauce/Axios` + MST + 
+#### Issues: `Apisauce/Axios` + `MST` + `MobX`
 
 * Cancel
 * Retry when timeout or network error
@@ -307,6 +314,9 @@ Issues: `Apisauce/Axios` + MST +
 * [https://github.com/axios/axios/issues/1497](https://github.com/axios/axios/issues/1497)
 * [https://lifesaver.codes/answer/cancel-request-if-a-subsequent-request-is-made](https://lifesaver.codes/answer/cancel-request-if-a-subsequent-request-is-made)
 * [https://www.leighhalliday.com/use-effect-hook](https://www.leighhalliday.com/use-effect-hook) - UseEffect with Axios Cancel Request
+* [Cancelling HTTP Requests with React Hooks and Axios!](https://www.youtube.com/watch?v=fhu1z5oRxC8)
 
 Note: Better with MST. Current solution is hook MST rootStore into api-service to call logout \(rootStore.authStore.logout\(\)\) - little bit workaround, not a overral approach and decouple way to do.
+
+
 
