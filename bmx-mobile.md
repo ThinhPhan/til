@@ -1,8 +1,6 @@
 # BMX Mobile
 
-
-
-## BMX Mobile
+## ToC
 
 * BMX Mobile
   * Plan
@@ -27,7 +25,7 @@
       * References
     * 23/8/2021
 
-### Plan
+## Plan
 
 `2.8 -> 12pm 6.8`
 
@@ -44,11 +42,11 @@
 * Waiting for API document, implementation
 * Update flow Auth with no depend on email \(sendgrid template fraud\)
 
-### API
+## API
 
 * [x] 3h hom nay update
 
-#### Update
+### Update
 
 * [x] get\_rate -&gt; fake tren firebase \(nhap tay cac coins\)
 * currencies
@@ -59,13 +57,13 @@
 * [ ] profile: verified\_email, verified\_phone, language
 * [x] histories: them pagination
 
-#### New API
+### New API
 
 * [ ] Withdraw
 * [ ] exchange
 * [ ] bmx module
 
-### Authenticate
+### Authentication
 
 1. Sign in Còn lỗi chưa có thông báo nếu user chưa confirm email thì cần hiện thông báo chưa confirmation và không sign-in được \(?? chưa chốt\)
 2. Signup -&gt; Check email chua work do sendgrid -&gt; workaround
@@ -210,7 +208,9 @@ if (resource_currency == "USDT") {
 
 ### Validate
 
-[https://stackoverflow.com/questions/14850553/javascript-regex-for-password-containing-at-least-8-characters-1-number-1-uppe](https://stackoverflow.com/questions/14850553/javascript-regex-for-password-containing-at-least-8-characters-1-number-1-uppe) [https://www.section.io/engineering-education/password-strength-checker-javascript/](https://www.section.io/engineering-education/password-strength-checker-javascript/) [https://www.thepolyglotdeveloper.com/2015/05/use-regex-to-test-password-strength-in-javascript/](https://www.thepolyglotdeveloper.com/2015/05/use-regex-to-test-password-strength-in-javascript/)
+* [https://stackoverflow.com/questions/14850553/javascript-regex-for-password-containing-at-least-8-characters-1-number-1-uppe](https://stackoverflow.com/questions/14850553/javascript-regex-for-password-containing-at-least-8-characters-1-number-1-uppe)
+* [https://www.section.io/engineering-education/password-strength-checker-javascript/](https://www.section.io/engineering-education/password-strength-checker-javascript/)
+* [https://www.thepolyglotdeveloper.com/2015/05/use-regex-to-test-password-strength-in-javascript/](https://www.thepolyglotdeveloper.com/2015/05/use-regex-to-test-password-strength-in-javascript/)
 
 ```text
 /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/
@@ -223,8 +223,6 @@ Here is an explanation:
   [a-zA-Z0-9]{8,}   // should contain at least 8 from the mentioned characters
 $/
 ```
-
-// username: { // // You need to pick a username too // presence: true, // // And it must be between 3 and 20 characters long // length: { // minimum: 3, // maximum: 20, // }, // format: { // // We don't allow anything that a-z and 0-9 // pattern: "\[a-z0-9\]+", // // but we don't care if the username is uppercase or lowercase // flags: "i", // message: "can only contain a-z and 0-9", // }, // }, // birthDate: { // // The user needs to give a birthday // presence: true, // // and must be born at least 18 years ago // date: { // latest: moment\(\).subtract\(18, "years"\), // message: "^You must be at least 18 years old to use this service", // }, // },
 
 ### Biometric Authentication - FaceID, TouchID
 
@@ -285,9 +283,9 @@ Bottom Sheet - Customize
 * [https://github.com/nysamnang/react-native-raw-bottom-sheet](https://github.com/nysamnang/react-native-raw-bottom-sheet) - 846
 * [https://github.com/StefanoMartella/react-native-simple-bottom-sheet](https://github.com/StefanoMartella/react-native-simple-bottom-sheet) - 27
 
-### Timelogs
+## Time Logs
 
-#### 23/8/2021
+### 2021.08.23
 
 * [ ] Setup 2FA Google Authenticator for withdraw
 * [ ] Exchange API implementation
@@ -299,9 +297,21 @@ Bottom Sheet - Customize
   * [ ] GET/bmx/unstake
   * [ ] POST /bmx/purchase
 
-#### 24/8/2021
+### 2021.08.24
 
-#### Issues: `Apisauce/Axios` + `MST` + `MobX`
+### 2021.08.26
+
+React Native + TypeScript + MobX
+
+**Issue**: Trouble to understand concept and implement when developing application handle logic between APIs and Store - decoupling the dependency
+
+**References**:
+
+* [Well explain architecture and setup project with TS + Mobx + MST](https://dev.to/shevchenkonik/react-typescript-mobx-4mei)
+*
+**Issue**: Above issue link to this `Domain Area` mentioned in article -&gt; `Axios/Apisauce`, `TypeScripts`, `MST`,  `MobX`
+
+## Issues: `Apisauce/Axios` + `MST` + `MobX`
 
 * Cancel
 * Retry when timeout or network error
@@ -317,6 +327,3 @@ Bottom Sheet - Customize
 * [Cancelling HTTP Requests with React Hooks and Axios!](https://www.youtube.com/watch?v=fhu1z5oRxC8)
 
 Note: Better with MST. Current solution is hook MST rootStore into api-service to call logout \(rootStore.authStore.logout\(\)\) - little bit workaround, not a overral approach and decouple way to do.
-
-
-

@@ -1,22 +1,17 @@
----
-description: Note taking during work or learn something new.
----
-
 # Today I Learned
 
-## 
+> Note taking during work or learn something new.
 
-> Quote some one as cool start
+## How to use
 
-## 2021.08.26
+This project is built using [Docsify](https://docsify.js.org/), please follow their [quick start](https://docsify.js.org/#/quickstart).
 
-React Native + TypeScript + MobX
+Run locally.
+Run online on GitHub Pages.
 
-**Issue**: Trouble to understand concept and implement when developing application handle logic between APIs and Store - decoupling the dependency
+## Goals
 
-**References**:
-
-* [Well explain architecture and setup project with TS + Mobx + MST](https://dev.to/shevchenkonik/react-typescript-mobx-4mei)
-* 
-**Issue**: Above issue link to this `Domain Area` mentioned in article -&gt; `Axios/Apisauce`, `TypeScripts`, `MST`,  `MobX`
-
+- First pilot experiment with Docsify
+- Load documents (Markdown files) in specific folders like Obsidian Vault, Dropbox and other project docs dynamically by configure in Settings.
+- `_sidebar` still need manual work to update.
+- Should support `properties` from `Obsidian` to publish the articles/docs.
