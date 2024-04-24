@@ -1,5 +1,19 @@
-# Learn Docsify
-### Learn the docsify start from beginner.
+![logo](_media/icon.svg)
 
-[Start Learn]()
-[Github](#/README)
+# docsify <small>3.5</small>
+
+> A magical documentation site generator.
+
+- Simple and lightweight
+- No statically built html files
+- Multiple themes
+
+[GitHub](https://github.com/docsifyjs/docsify/)
+[Get Started](#docsify)
+
+<!-- background image -->
+
+![](_media/bg.png)
+
+<!-- background color -->
+![color](#f0f0f0)

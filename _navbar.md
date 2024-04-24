@@ -1,8 +1,7 @@
 * [Home](/)
-* []
-* Getting started
 
-  * [Quick start](quickstart.md)
+* Getting started
+  * [Test](/test/)
   * [Writing more pages](more-pages.md)
   * [Custom navbar](custom-navbar.md)
   * [Cover page](cover.md)
